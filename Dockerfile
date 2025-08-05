@@ -1,5 +1,5 @@
 FROM openjdk:17
-COPY target/spring-boot-docker-app.jar /usr/app/
+COPY target/DeploymentDemoProject-0.0.1-SNAPSHOT.jar /usr/app/
 WORKDIR /usr/app/
 EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "spring-boot-docker-app.jar"]
